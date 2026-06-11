@@ -53,11 +53,11 @@ export default function App() {
 
   // Slides configuration metadata
   const slidesMeta = lang === "ID" ? [
-    { id: "hero", label: "01. Introduction", title: "Bikin Bisnis Kebanjiran Orderan" },
-    { id: "services", label: "02. Layanan Solutif", title: "Web, SEO, & Design/Editing Foto Video" },
-    { id: "casestudy", label: "03. Case Study", title: "Digital Scale-Up Koota Production" },
-    { id: "skills", label: "04. Tech Stack & Skills", title: "Keahlian Teknis & Sertifikasi" },
-    { id: "contact", label: "05. Hubungi Saya / Consult", title: "Diskusikan Kebutuhan Anda" }
+    { id: "hero", label: "01. Pendahuluan", title: "Melejitkan Konversi Penjualan Bisnis" },
+    { id: "services", label: "02. Solusi Layanan", title: "Web, SEO, & Desain/Editing Foto Video" },
+    { id: "casestudy", label: "03. Studi Kasus", title: "Digital Scale-Up Koota Production" },
+    { id: "skills", label: "04. Keahlian & Tech Stack", title: "Keahlian Teknis & Sertifikasi" },
+    { id: "contact", label: "05. Hubungi Saya", title: "Diskusikan Kebutuhan Anda" }
   ] : [
     { id: "hero", label: "01. Introduction", title: "Boost Your Business Orders" },
     { id: "services", label: "02. Services Overview", title: "Web, SEO, & Photo/Video Design/Editing" },
@@ -69,20 +69,20 @@ export default function App() {
   const services: ServiceDetail[] = lang === "ID" ? [
     {
       title: "Web Design & Development",
-      description: "Pembuatan website modern berkecepatan tinggi, responsif, & berorientasi.",
+      description: "Pembuatan website modern berkecepatan tinggi, responsif, dan berorientasi pada hasil (conversion-oriented).",
       metric: "Skor PageSpeed 95+",
       icon: "laptop"
     },
     {
       title: "SEO Optimization",
-      description: "Optimasi on-page/off-page mendalam, riset kata kunci potensial, & penulisan konten pendukung peringkat teratas di Google.",
+      description: "Optimasi on-page dan off-page secara mendalam, riset kata kunci potensial, serta penulisan konten berkualitas untuk meraih peringkat teratas di Google.",
       metric: "Trafik Organik Berlipat",
       icon: "search"
     },
     {
       title: "Digital Content & Branding",
-      description: "Desain grafis premium, design editing foto atau video, serta editing video iklan profesional berorientasi call-to-action.",
-      metric: "Dongkrak Rasio Klik",
+      description: "Desain grafis premium, editing foto/video, serta pembuatan video iklan profesional yang berpotensi tinggi menghasilkan konversi (call-to-action).",
+      metric: "Meningkatkan Rasio Klik (CTR)",
       icon: "layers"
     }
   ] : [
@@ -109,9 +109,9 @@ export default function App() {
   const project: ProjectDetail = lang === "ID" ? {
     name: "Digital Scale-Up - Koota Production",
     tagline: "Situs profil agency kreatif & strategi SEO optimis berkinerja tinggi",
-    masalah: "Klien kehilangan potensi pasar digital karena situs web lama terlalu lambat\n(PageSpeed < 30), sedikit tidak mobile-friendly, serta nihil kunjungan organik dari mesin pencari Google.",
-    solusi: "Membangun ulang struktur program secara modular dengan optimalisasi loading asset, merancang interaksi visual modern yang eye-catching, serta melakukan boosting blog dengan menyusun peta kata kunci prioritas lokal.",
-    hasil: "Skor Core Web Vitals melonjak drastis hingga 98/100, mengamankan posisi 3 besar SERP untuk kata kunci andalan koota, serta mendatangkan konversi leads dari form WA instan.",
+    masalah: "Klien kehilangan potensi pasar digital karena situs web lama yang terlalu lambat (PageSpeed < 30), kurang responsif (tidak mobile-friendly), serta tidak memiliki kunjungan organik dari mesin pencari Google.",
+    solusi: "Membangun ulang arsitektur situs secara modular dengan optimalisasi pemuatan aset (loading speed), merancang interaksi visual modern yang menarik, serta melakukan boosting blog berbasis peta kata kunci lokal bernilai tinggi.",
+    hasil: "Skor Core Web Vitals melonjak drastis hingga 98/100, mengamankan posisi 3 besar SERP untuk kata kunci utama, serta mendatangkan prospek (leads) secara instan melalui integrasi formulir WhatsApp.",
     performance: 98,
     seoScore: 100,
     color: "#10b981", 
@@ -129,16 +129,16 @@ export default function App() {
   };
 
   const skills: SkillDetail[] = [
-    { name: "React & TypeScript", level: 90, experience: lang === "ID" ? "Sering dipakai dalam modern web apps" : "Frequently used in modern web apps", category: "Web", color: "from-blue-500 to-cyan-500", iconName: "code" },
-    { name: "WordPress", level: 90, experience: lang === "ID" ? "Pembuatan web cepat dengan CMS, Elementor & Custom Blocks" : "Rapid web development with CMS, Elementor & Custom Blocks", category: "Web", color: "from-sky-600 to-blue-500", iconName: "layout" },
-    { name: "HTML", level: 95, experience: lang === "ID" ? "Struktur markup semantik & aksesibilitas tinggi" : "Semantic markup structure & high accessibility", category: "Web", color: "from-orange-500 to-red-600", iconName: "code" },
-    { name: "CSS", level: 92, experience: lang === "ID" ? "Styling layout modern & animasi responsif" : "Modern layout styling & responsive animations", category: "Web", color: "from-blue-500 to-cyan-600", iconName: "laptop" },
-    { name: "JavaScript", level: 88, experience: lang === "ID" ? "Logika pemrograman frontend & interaktivitas" : "Frontend programming logic & interactivity", category: "Web", color: "from-yellow-500 to-amber-600", iconName: "code" },
-    { name: "Canva", level: 95, experience: lang === "ID" ? "Desain visual cepat & media sosial kreatif" : "Quick visual designs & creative social media layouts", category: "Design", color: "from-cyan-400 to-teal-500", iconName: "layers" },
-    { name: "SEO On-Page & Off-Page", level: 88, experience: lang === "ID" ? "Optimasi konten & arsitektur tautan" : "Content optimization & link architecture", category: "SEO", color: "from-emerald-500 to-green-600", iconName: "search" },
-    { name: "Google Analytics & GSC", level: 85, experience: lang === "ID" ? "Analisis traffic & indexing performa" : "Traffic analysis & performance indexing", category: "SEO", color: "from-green-400 to-emerald-500", iconName: "trending" },
-    { name: "Adobe Photoshop", level: 82, experience: lang === "ID" ? "Desain aset kreatif & mockups" : "Creative assets design & mockups", category: "Design", color: "from-purple-500 to-indigo-600", iconName: "layers" },
-    { name: "Adobe Premiere Pro", level: 80, experience: lang === "ID" ? "Editing video komersial bisnis" : "Commercial business video editing", category: "Design", color: "from-pink-500 to-rose-600", iconName: "video" }
+    { name: "React & TypeScript", level: 90, experience: lang === "ID" ? "Sering digunakan dalam pengembangan aplikasi web modern" : "Frequently used in modern web apps", category: "Web", color: "from-blue-500 to-cyan-500", iconName: "code" },
+    { name: "WordPress", level: 90, experience: lang === "ID" ? "Pembuatan website cepat menggunakan CMS, Elementor, dan Custom Blocks" : "Rapid web development with CMS, Elementor & Custom Blocks", category: "Web", color: "from-sky-600 to-blue-500", iconName: "layout" },
+    { name: "HTML", level: 95, experience: lang === "ID" ? "Penyusunan markup semantik dengan standar aksesibilitas tinggi" : "Semantic markup structure & high accessibility", category: "Web", color: "from-orange-500 to-red-600", iconName: "code" },
+    { name: "CSS", level: 92, experience: lang === "ID" ? "Desain tata letak (layout) modern dan animasi responsif" : "Modern layout styling & responsive animations", category: "Web", color: "from-blue-500 to-cyan-600", iconName: "laptop" },
+    { name: "JavaScript", level: 88, experience: lang === "ID" ? "Logika pemrograman frontend dan interaktivitas dinamis" : "Frontend programming logic & interactivity", category: "Web", color: "from-yellow-500 to-amber-600", iconName: "code" },
+    { name: "Canva", level: 95, experience: lang === "ID" ? "Desain visual cepat dan pembuatan konten media sosial yang kreatif" : "Quick visual designs & creative social media layouts", category: "Design", color: "from-cyan-400 to-teal-500", iconName: "layers" },
+    { name: "SEO On-Page & Off-Page", level: 88, experience: lang === "ID" ? "Optimasi struktur konten dan arsitektur tautan (link building)" : "Content optimization & link architecture", category: "SEO", color: "from-emerald-500 to-green-600", iconName: "search" },
+    { name: "Google Analytics & GSC", level: 85, experience: lang === "ID" ? "Analisis trafik website dan pemantauan performa pengindeksan" : "Traffic analysis & performance indexing", category: "SEO", color: "from-green-400 to-emerald-500", iconName: "trending" },
+    { name: "Adobe Photoshop", level: 82, experience: lang === "ID" ? "Pembuatan aset visual kreatif dan mockup desain" : "Creative assets design & mockups", category: "Design", color: "from-purple-500 to-indigo-600", iconName: "layers" },
+    { name: "Adobe Premiere Pro", level: 80, experience: lang === "ID" ? "Editing video iklan dan konten komersial untuk bisnis" : "Commercial business video editing", category: "Design", color: "from-pink-500 to-rose-600", iconName: "video" }
   ];
 
   const handleNext = () => {
@@ -224,8 +224,8 @@ export default function App() {
       </header>
 
       {/* Main Slide Workspace */}
-      <main className="flex-1 flex items-center justify-center p-6 sm:p-10 max-w-7xl mx-auto w-full relative z-20">
-        <div className="w-full relative min-h-[580px] lg:min-h-[580px] flex flex-col justify-center">
+      <main className="flex-1 flex items-center justify-center p-6 py-10 sm:p-10 sm:py-16 max-w-7xl mx-auto w-full relative z-20">
+        <div className="w-full relative min-h-[460px] lg:min-h-[460px] flex flex-col justify-center">
           
           <AnimatePresence mode="wait">
             <motion.div
@@ -234,7 +234,7 @@ export default function App() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -25 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14"
+              className="w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 lg:min-h-[385px]"
             >
               
               {/* Left Column: Interactive Layout Content */}
@@ -265,12 +265,12 @@ export default function App() {
                     <h2 className="text-[44px] sm:text-[54px] lg:text-[62px] font-serif font-normal leading-[1.1] text-white tracking-tighter">
                       {lang === "ID" ? (
                         <>
-                          Bikin Bisnis <br className="hidden sm:inline" />
+                          Melejitkan Konversi <br className="hidden sm:inline" />
                           <span className="inline-block bg-[#006400] text-black font-serif font-bold px-3 py-1 my-1.5 rounded-none tracking-tighter">
-                            Kebanjiran Orderan
+                            Penjualan Bisnis
                           </span>
                           <br className="hidden sm:inline" />
-                          Lewat Web Modern.
+                          Lewat Website Modern.
                         </>
                       ) : (
                         <>
@@ -286,7 +286,7 @@ export default function App() {
                     
                     <p className="text-white/70 text-sm sm:text-base leading-relaxed font-sans max-w-xl">
                       {lang === "ID" 
-                        ? "Halo! Saya Davin S.A . Saya menggabungkan keahlian frontend modern dengan strategi optimasi SEO untuk melahirkan platform digital yang super cepat, memukau, dan menembus papan atas pencarian Google secara konsisten."
+                        ? "Halo! Saya Davin S.A. Saya menggabungkan keahlian frontend modern dengan strategi optimasi SEO untuk menghadirkan website yang super cepat, memukau, dan menembus halaman pertama hasil pencarian Google secara konsisten."
                         : "Hello! I'm Davin S.A. I combine modern frontend craftsmanship with targeted SEO strategies to deliver ultra-fast, visually stunning digital solutions that rank on the first page of Google."}
                     </p>
 
@@ -313,20 +313,33 @@ export default function App() {
                           </button>
                         )}
                       </div>
-                      {visitorName && (
-                        <motion.p 
-                          initial={{ opacity: 0, y: 5 }} 
-                          animate={{ opacity: 1, y: 0 }} 
-                          className="text-xs text-white/90 font-serif italic flex items-center gap-2 pt-1"
-                        >
-                          <Sparkles className="w-3.5 h-3.5 text-[#4ade80]" />
-                          {lang === "ID" ? (
-                            <>Selamat Datang, <strong>{visitorName}</strong>! Silakan klik tombol di bawah atau gunakan navigasi atas untuk menelaah portofolio saya.</>
+                      <div className="min-h-[40px] flex items-start gap-2.5 pt-1.5">
+                        <Sparkles className={`w-3.5 h-3.5 shrink-0 mt-0.5 ${visitorName ? 'text-[#4ade80]' : 'text-stone-500'}`} />
+                        <div className="flex-1">
+                          {visitorName ? (
+                            <motion.p 
+                              key="greeting"
+                              initial={{ opacity: 0, y: 5 }} 
+                              animate={{ opacity: 1, y: 0 }} 
+                              className="text-xs text-white/90 font-serif italic leading-relaxed"
+                            >
+                              {lang === "ID" ? (
+                                <>Selamat datang, <strong className="font-semibold text-white">{visitorName}</strong>! Silakan klik tombol konsultasi di bawah atau gunakan navigasi lihat layanan untuk menjelajahi portofolio saya.</>
+                              ) : (
+                                <>Welcome, <strong className="font-semibold text-white">{visitorName}</strong>! Feel free to click the buttons below or use the top navigation panel to explore my portfolio.</>
+                              )}
+                            </motion.p>
                           ) : (
-                            <>Welcome, <strong>{visitorName}</strong>! Feel free to click the buttons below or use the top navigation panel to explore my portfolio.</>
+                            <p className="text-xs text-stone-400 font-serif italic leading-relaxed">
+                              {lang === "ID" ? (
+                                <>Masukkan nama Anda untuk melihat sapaan personal interaktif.</>
+                              ) : (
+                                <>Enter your name to receive a personalized interactive greeting.</>
+                              )}
+                            </p>
                           )}
-                        </motion.p>
-                      )}
+                        </div>
+                      </div>
                     </div>
 
                     <div className="flex flex-wrap gap-4 pt-2">
@@ -361,14 +374,14 @@ export default function App() {
                     <div className="space-y-2">
                       <h2 className="text-3xl sm:text-4xl font-serif text-white tracking-tight leading-tight">
                         {lang === "ID" ? (
-                          <>Layanan Solutif <span className="italic font-bold text-[#4ade80]">Untuk Bisnis Anda</span></>
+                          <>Solusi Layanan <span className="italic font-bold text-[#4ade80]">Untuk Bisnis Anda</span></>
                         ) : (
                           <>Solutions <span className="italic font-bold text-[#4ade80]">For Your Business</span></>
                         )}
                       </h2>
                       <p className="text-white/60 text-sm max-w-xl font-sans">
                         {lang === "ID" 
-                          ? "Pilar layanan utama yang bersinergi secara strategis guna mendongkrak visibilitas konversi produk digital Anda di internet, termasuk web, SEO, serta design editing foto atau video."
+                          ? "Pilar layanan utama yang bersinergi secara strategis guna mendongkrak visibilitas dan konversi produk digital Anda di internet, mencakup Web Development, SEO, serta Desain/Editing Foto dan Video."
                           : "Key strategic pillars designed to synergistically boost your digital visibility and sales conversions, including web development, detailed SEO, and professional photo/video editing."}
                       </p>
                     </div>
@@ -398,26 +411,43 @@ export default function App() {
                       ))}
                     </div>
 
-                    <div className="flex items-center justify-between gap-4 pt-2">
-                      <a
-                        id="services-download-portfolio-btn"
-                        href="https://drive.google.com/file/d/1S2_KPE8xKrfW3sm4eDVNkp0jcz8Ox8na/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2 bg-white/5 hover:bg-white/10 text-xs text-white/90 font-mono uppercase tracking-wider flex items-center gap-2 transition-all border border-white/5 whitespace-nowrap"
-                      >
-                        <FileDown className="w-4 h-4 text-[#4ade80]" />
-                        {lang === "ID" ? "UNDUH RESUME PORTOFOLIO" : "DOWNLOAD PORTFOLIO RESUME"}
-                      </a>
-
+                    <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-white/5">
                       <button
-                        id="services-cta-next-btn"
-                        onClick={() => setCurrentSlide(2)}
-                        className="text-xs font-mono font-semibold tracking-widest text-[#4ade80] hover:text-[#4ade80] flex items-center gap-1.5 group select-none uppercase transition-all duration-300 transform hover:translate-x-1"
+                        id="services-cta-prev-btn"
+                        onClick={() => {
+                          setCurrentSlide(0);
+                          setIsPlaying(false);
+                        }}
+                        className="text-xs font-mono font-semibold tracking-widest text-white/40 hover:text-white flex items-center gap-1.5 group select-none uppercase transition-all duration-300 transform hover:-translate-x-1"
                       >
-                        {lang === "ID" ? "Beralih ke Studi Kasus" : "Check Case Study"}
-                        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-2" />
+                        <ChevronLeft className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
+                        {lang === "ID" ? "Kembali" : "Back"}
                       </button>
+
+                      <div className="flex flex-wrap items-center gap-3">
+                        <a
+                          id="services-download-portfolio-btn"
+                          href="https://drive.google.com/file/d/1S2_KPE8xKrfW3sm4eDVNkp0jcz8Ox8na/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-4 py-2.5 bg-white/5 hover:bg-white/10 text-xs text-white/95 font-mono uppercase tracking-wider flex items-center gap-2 transition-all border border-white/5 whitespace-nowrap"
+                        >
+                          <FileDown className="w-4 h-4 text-[#4ade80]" />
+                          {lang === "ID" ? "UNDUH RESUME PORTOFOLIO" : "UNDUH RESUME PORTOFOLIO"}
+                        </a>
+
+                        <button
+                          id="services-cta-next-btn"
+                          onClick={() => {
+                            setCurrentSlide(2);
+                            setIsPlaying(false);
+                          }}
+                          className="px-5 py-2.5 bg-[#006400] hover:bg-[#008f00] text-black text-xs uppercase tracking-widest font-bold transition-all hover:translate-x-1 flex items-center gap-2 group cursor-pointer"
+                        >
+                          {lang === "ID" ? "Lihat Studi Kasus" : "Check Case Study"}
+                          <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 )}
@@ -486,7 +516,7 @@ export default function App() {
 
                       <div className="px-5 py-3 bg-[#0D0D0D] border-t border-white/5 flex flex-wrap gap-2 items-center">
                         <span className="text-[10px] font-mono text-white/40 mr-1.5 uppercase font-bold tracking-wider">
-                          {lang === "ID" ? "Perkakas:" : "Tools:"}
+                          {lang === "ID" ? "Teknologi:" : "Tools:"}
                         </span>
                         {project.techs.map((tech) => (
                           <span 
@@ -524,6 +554,32 @@ export default function App() {
                         </div>
                       </div>
                     </div>
+
+                    <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-white/5">
+                      <button
+                        id="casestudy-cta-prev-btn"
+                        onClick={() => {
+                          setCurrentSlide(1);
+                          setIsPlaying(false);
+                        }}
+                        className="text-xs font-mono font-semibold tracking-widest text-[#ebb3b3] md:text-white/40 hover:text-white flex items-center gap-1.5 group select-none uppercase transition-all duration-300 transform hover:-translate-x-1"
+                      >
+                        <ChevronLeft className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
+                        {lang === "ID" ? "Layanan" : "Services"}
+                      </button>
+
+                      <button
+                        id="casestudy-cta-next-btn"
+                        onClick={() => {
+                          setCurrentSlide(3);
+                          setIsPlaying(false);
+                        }}
+                        className="px-5 py-2.5 bg-[#006400] hover:bg-[#008f00] text-black text-xs uppercase tracking-widest font-bold transition-all hover:translate-x-1 flex items-center gap-2 group cursor-pointer"
+                      >
+                        {lang === "ID" ? "Lihat Keahlian" : "Check Skills"}
+                        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                      </button>
+                    </div>
                   </div>
                 )}
 
@@ -539,7 +595,7 @@ export default function App() {
                       </h2>
                       <p className="text-white/60 text-sm max-w-xl font-sans">
                         {lang === "ID"
-                          ? "Tingkat kemahiran yang dinilai secara objektif berdasarkan proyek komersial maupun kontribusi personal yang telah rilis."
+                          ? "Tingkat kemahiran yang dinilai secara objektif berdasarkan proyek komersial maupun kontribusi personal yang telah dirilis."
                           : "Objective assessment levels of technical competencies demonstrated in commercial web products and software solutions."}
                       </p>
                     </div>
@@ -551,10 +607,10 @@ export default function App() {
                           key={cat}
                           id={`skill-filter-btn-${cat}`}
                           onClick={() => setSelectedCategory(cat)}
-                          className={`px-3 py-1 rounded-none text-xs font-mono tracking-wider transition-all uppercase ${
+                          className={`px-3 py-1 rounded-none text-xs font-mono font-semibold tracking-wider transition-all uppercase ${
                             selectedCategory === cat
-                              ? "bg-[#006400] text-black font-bold"
-                              : "text-white/55 hover:text-white"
+                              ? "bg-[#006400] text-black"
+                              : "text-white/55 hover:text-white hover:bg-white/5"
                           }`}
                         >
                           {cat}
@@ -562,7 +618,10 @@ export default function App() {
                       ))}
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[260px] overflow-y-auto pr-1">
+                    <div 
+                      className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-[220px] overflow-y-auto pr-1 content-start"
+                      style={{ scrollbarGutter: "stable" }}
+                    >
                       {skills
                         .filter((s) => selectedCategory === "All" || s.category === selectedCategory)
                         .map((skill) => (
@@ -597,11 +656,37 @@ export default function App() {
                       </div>
                       <p className="text-xs text-white/80 font-sans">
                         {lang === "ID" ? (
-                          <>Sertifikasi keahlian: <strong className="text-[#4ade80]">BNSP Certificate</strong> & <strong>Software Development (Asisten Pemrograman Junior)</strong>.</>
+                          <>Sertifikasi Kompetensi: <strong className="text-[#4ade80]">Sertifikat BNSP</strong> & <strong>Software Development (Asisten Pemrograman Junior)</strong>.</>
                         ) : (
                           <>Skills Qualification: <strong className="text-[#4ade80]">BNSP Certificate</strong> & <strong>Software Development (Junior Programmer Assistant)</strong>.</>
                         )}
                       </p>
+                    </div>
+
+                    <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-white/5">
+                      <button
+                        id="skills-cta-prev-btn"
+                        onClick={() => {
+                          setCurrentSlide(2);
+                          setIsPlaying(false);
+                        }}
+                        className="text-xs font-mono font-semibold tracking-widest text-[#ebb3b3] md:text-white/40 hover:text-white flex items-center gap-1.5 group select-none uppercase transition-all duration-300 transform hover:-translate-x-1"
+                      >
+                        <ChevronLeft className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
+                        {lang === "ID" ? "Studi Kasus" : "Case Study"}
+                      </button>
+
+                      <button
+                        id="skills-cta-next-btn"
+                        onClick={() => {
+                          setCurrentSlide(4);
+                          setIsPlaying(false);
+                        }}
+                        className="px-5 py-2.5 bg-[#006400] hover:bg-[#008f00] text-black text-xs uppercase tracking-widest font-bold transition-all hover:translate-x-1 flex items-center gap-2 group cursor-pointer"
+                      >
+                        {lang === "ID" ? "Konsultasi" : "Consultation"}
+                        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                      </button>
                     </div>
                   </div>
                 )}
@@ -621,7 +706,7 @@ export default function App() {
                       </h2>
                       <p className="text-white/60 text-sm max-w-xl font-sans">
                         {lang === "ID"
-                          ? "Mari berbincang hangat mengenai platform digital impian Anda atau rancangan optimasi SEO lokal kompetitif secara gres & gratis."
+                          ? "Mari berdiskusi secara mendalam tentang website impian Anda atau strategi optimasi SEO lokal secara gratis."
                           : "Let's discuss your dream digital solution or competitive local SEO implementation plan, completely free of charge."}
                       </p>
                     </div>
@@ -698,14 +783,14 @@ export default function App() {
                             {copiedWA ? (
                               <>
                                 <Check className="w-4 h-4 text-[#4ade80]" />
-                                {lang === "ID" ? "Tersalin ke Clipboard" : "Copied to Clipboard"}
+                                {lang === "ID" ? "Berhasil Disalin" : "Copied to Clipboard"}
                               </>
                             ) : (
                               <>
                                 <svg className="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
                                 </svg>
-                                {lang === "ID" ? "Salin Tautan WA" : "Copy WA Link"}
+                                {lang === "ID" ? "Salin Tautan WhatsApp" : "Copy WA Link"}
                               </>
                             )}
                           </button>
@@ -727,6 +812,32 @@ export default function App() {
                         <FileDown className="w-3.5 h-3.5 text-[#4ade80]" />
                         Download PDF
                       </a>
+                    </div>
+
+                    <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-white/5">
+                      <button
+                        id="contact-cta-prev-btn"
+                        onClick={() => {
+                          setCurrentSlide(3);
+                          setIsPlaying(false);
+                        }}
+                        className="text-xs font-mono font-semibold tracking-widest text-[#ebb3b3] md:text-white/40 hover:text-white flex items-center gap-1.5 group select-none uppercase transition-all duration-300 transform hover:-translate-x-1"
+                      >
+                        <ChevronLeft className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
+                        {lang === "ID" ? "Keahlian" : "Skills"}
+                      </button>
+
+                      <button
+                        id="contact-cta-home-btn"
+                        onClick={() => {
+                          setCurrentSlide(0);
+                          setIsPlaying(false);
+                        }}
+                        className="px-5 py-2.5 border border-[#4ade80]/30 hover:border-[#4ade80] bg-[#006400]/10 hover:bg-[#006400]/25 text-[#4ade80] text-xs uppercase tracking-widest font-bold transition-all hover:translate-x-1 flex items-center gap-2 group cursor-pointer"
+                      >
+                        {lang === "ID" ? "Beranda" : "Home"}
+                        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                      </button>
                     </div>
                   </div>
                 )}
@@ -812,7 +923,7 @@ export default function App() {
                                 <div className="space-y-1.5">
                                   <h4 className="text-[9px] font-mono uppercase text-[#4ade80] tracking-widest leading-none font-bold">Davin S.A</h4>
                                   <h3 className="text-sm font-serif text-white leading-normal italic">
-                                    {lang === "ID" ? "Bikin Bisnis Kebanjiran Orderan." : "Flooding Business with Sales Orders."}
+                                    {lang === "ID" ? "Melejitkan Konversi Penjualan Bisnis." : "Flooding Business with Sales Orders."}
                                   </h3>
                                 </div>
                                 <div className="grid grid-cols-12 gap-3.5">
@@ -827,7 +938,7 @@ export default function App() {
                                   </div>
                                 </div>
                                 <div className="flex justify-between items-center bg-[#141414] p-2 border border-white/5 rounded-none text-[9px] font-mono">
-                                  <span className="text-white/40">{lang === "ID" ? "Pelacak pengunjung aktif:" : "Visitor active track:"}</span>
+                                  <span className="text-white/40">{lang === "ID" ? "Nama pengunjung aktif:" : "Visitor active track:"}</span>
                                   <span className="text-[#4ade80] font-bold">{visitorName ? visitorName : "Unidentified Guest"}</span>
                                 </div>
                               </div>
