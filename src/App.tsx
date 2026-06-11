@@ -301,7 +301,7 @@ export default function App() {
                           id="visitor-name-input"
                           value={visitorName}
                           onChange={(e) => setVisitorName(e.target.value)}
-                          placeholder={lang === "ID" ? "Contoh: Budi Arto" : "e.g. John Doe"}
+                          placeholder={lang === "ID" ? "Contoh: Romi Jahat" : "e.g. John Lennon"}
                           className="flex-1 px-4 py-2.5 bg-[#0D0D0D] border border-white/10 rounded-none text-sm text-[#EBEBEB] focus:outline-none focus:border-[#4ade80] transition-colors placeholder:text-stone-700 font-mono"
                         />
                         {visitorName && (
